@@ -1,0 +1,117 @@
+.title{
+	font-size: 3rem;
+	font-family: '华文行楷';
+	position: relative;
+	/*left: -20%;*/
+	padding-bottom: 5%;
+  width: 8em;
+}
+/*表格居中*/
+.center{
+  text-align: center;
+}
+table{
+  margin: auto;
+}
+/*END*/
+
+/*提示*/
+#xx{
+  position: relative;
+  left: 45%;
+  font-size: 14px;
+  color: red;
+}
+
+/*鼠标点击事件*/
+label > * {
+    pointer-events: none;
+}
+
+button {
+  border: 0;
+  background: none;
+  text-transform: uppercase;
+  color: #4361ee;
+  font-weight: bold;
+  position: relative;
+  outline: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-left: 5rem;
+}
+
+button::before, button::after {
+  box-sizing: inherit;
+  position: absolute;
+  content: '';
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+button::after {
+  bottom: 0;
+  right: 0;
+}
+
+button::before {
+  top: 0;
+  left: 0;
+}
+
+button:hover::before, button:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+button:hover::before {
+  border-top-color: #4361ee;
+  border-right-color: #4361ee;
+  transition: width 0.1s ease-out, height 0.1s ease-out 0.1s;
+}
+
+button:hover::after {
+  border-bottom-color: #4361ee;
+  border-left-color: #4361ee;
+  transition: border-color 0s ease-out 0.3s, width 0.1s ease-out 0.3s, height 0.1s ease-out 0.5s;
+}
+input[type=text],input[type=tel], textarea {  
+    -webkit-transition: all 0.10s ease-in-out;  
+    -moz-transition: all 0.10s ease-in-out;  
+    -ms-transition: all 0.10s ease-in-out;  
+    -o-transition: all 0.10s ease-in-out;  
+    outline: none;  
+    /*padding: 3px 0px 3px 3px;  
+    margin: 5px 1px 3px 0px; */ 
+    border: 1px solid #ddd;  
+}  
+   
+input[type=text]:focus,input[type=tel]:focus, textarea:focus {  
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);  
+    /*padding: 3px 0px 3px 3px;  
+    margin: 5px 1px 3px 0px; */ 
+    border: 1px solid rgba(81, 203, 238, 1);  
+}  
+
+/*信息名*/
+.sr{
+    resize: none;
+    width: 90%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    vertical-align: middle;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 12px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+}
+textarea.sr{
+  height:3.5rem;
+}

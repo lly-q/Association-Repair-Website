@@ -1,0 +1,65 @@
+.revise,.regist{
+    position: relative;
+    left: 10rem;
+}
+.regist{
+    /*text-align: center;*/
+    font-size: 18px;
+}
+p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #C9C9C9;
+}
+hr{
+    height: 2px;
+    border: none;
+    background-color: #f60;
+}
+
+/*创建新用户*/
+label{
+    vertical-align: middle;
+    display: inline-block;
+    min-width: 100px;
+    font-size: 18px;
+}
+select{
+    font-size: 1rem;
+}
+/*未完待续……*/
+#hide{
+    /*display: none;*/
+}
+
+
+input{
+	padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+input[type=text]{
+    width: 190px;
+    height: 24px;
+    text-align: center;
+    transition: font-size 200ms linear;
+}
+input[type=text], textarea {  
+    -webkit-transition: all 0.30s ease-in-out;  
+    -moz-transition: all 0.30s ease-in-out;  
+    -ms-transition: all 0.30s ease-in-out;  
+    -o-transition: all 0.30s ease-in-out;  
+    outline: none;  
+    padding: 3px 0px 3px 3px;  
+    margin: 5px 1px 3px 0px;  
+    border: 1px solid #ddd;  
+}  
+input[type=text]:focus, textarea:focus {  
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);  
+    padding: 3px 0px 3px 3px;  
+    margin: 5px 1px 3px 0px;  
+    border: 1px solid rgba(81, 203, 238, 1);  
+}  

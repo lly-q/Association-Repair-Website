@@ -1,0 +1,55 @@
+/*总览*/
+.big{
+	width: 80%;
+	margin-left: 3rem;
+	text-align: center;
+	font-size: 1.6rem;
+}
+.big p{
+	font-size: 2rem;
+	color: #44CDF7;
+}
+.list{
+	display: inline-block;
+	width: 10%;
+	text-align: left;
+}
+.num{
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+/*隐式换行*/
+.hide{
+	display: none;
+}
+
+/*小屏适配*/
+@media screen and (min-width:1048px) {
+	
+}
+
+@media screen and (min-width:800px) and (max-width:1048px) {
+	.num{
+		font-size: 1.8rem;
+	}
+	.big{
+		font-size: 1.2rem;	
+		margin-left: 1.5rem;
+	}
+}
+@media screen and (min-width:600px) and (max-width:800px) {
+	.big{
+		font-size: 0.8rem;
+		margin-left: 1rem;
+	}
+}
+@media screen and (max-width:600px) {
+	.big{
+		font-size: 0.8rem;
+		margin-left: 0rem;
+	}
+	.hide{
+		display: block;
+	}
+} 
