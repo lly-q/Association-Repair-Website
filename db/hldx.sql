@@ -30,7 +30,7 @@ CREATE TABLE `manager` (
 
 /*Data for the table `manager` */
 
-INSERT INTO `manager`(`uid`,`name`,`password`,`status`) values (1,'王佐','123456','all'),(2,'伟霆','123456','all'),(4,'广州','123456','all'),(5,'用户名','123456','repair'),(6,'root','111111','reviewer'),(8,'admin','123456','repair');
+insert  into `manager`(`uid`,`name`,`password`,`status`) values (1,'王佐','123456','all'),(2,'伟霆','123456','all'),(4,'广州','123456','all'),(5,'用户名','123456','repair'),(6,'root','111111','reviewer'),(8,'admin','123456','repair');
 
 /*Table structure for table `message` */
 
