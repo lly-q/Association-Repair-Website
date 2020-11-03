@@ -32,7 +32,7 @@
 		<p>创建新用户</p>
 		<hr>
 		<div class="regist">
-			<form action="options.php" method="post">
+			<form action="optionsALL.php" method="post">
 			<div class="message">
 				<label>注册：<input type="text" name="name" placeholder="请输入要注册的名字"></label>
 				<br>
@@ -42,6 +42,8 @@
 					<option value="all">管理人员</option>
 					<option value="reviewer">审核人员</option>
 				</select>
+                <br>密码：<input type="password"  name="password" placeholder="请输入密码"/>
+
 			</div><br>
 			<!-- <input type="button" style="background-color: #00AAEE; color: #fff"  value="增加" onclick="add();" id="ad" /> -->
 			<input type="submit" style="background-color: #00AAEE; color: #fff"  value="注册" />
@@ -61,12 +63,13 @@
 		if (isset($_POST['name'])) {
 			$name=$_POST['name'];
 			$status=$_POST['sta'];
+            $password=$_POST['password'];
 		$res=mysqli_query($link,"select * from manager where name='$get'");
 		$cj=mysqli_fetch_array($res);
 		$yz=$cj['status'];
 		if($yz=='all'){
-			$add=mysqli_query($link,"insert into manager value('','$name','123456','$status')");
-			echo "<script>alert('注册成功！');location:'./optionsAll.php'</script>";
+			$add=mysqli_query($link,"insert into manager value('','$name','$password','$status')");
+			echo "<script>alert('注册成功！');location:'./optionsALL.php'</script>";
 
 		}else{	
 			echo "<script>alert('您没有权限操作！');location='./overview.php'</script>";
